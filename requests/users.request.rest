@@ -3,10 +3,10 @@ POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-    "firstName": "Pepe",
+    "firstName": "martin",
     "lastName": "Aguirre",
-    "emailId": "pepe",
-    "password": "pepe"
+    "emailId": "martin",
+    "password": "martin"
 }
 
 ### login
@@ -14,6 +14,6 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "emailId": "pepe",
-    "password": "pepe"
+    "emailId": "martin",
+    "password": "martin"
 }

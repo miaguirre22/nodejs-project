@@ -1,4 +1,4 @@
-const res = require("express/lib/response");
+// const res = require("express/lib/response");
 const db = require("../config/db.config");
 
 exports.register = (data, callback) => {
@@ -20,9 +20,11 @@ exports.login = (data, callback) => {
     [data.emailId, data.password],
     (error, results, fields) => {
       if (error) {
+        console.log(error);
         return callback(error);
       }
-      if (results.id) {
+      console.log(results);
+      if (results.length > 0) {
         return callback(null, "Login success!");
       } else {
         return callback(null, "Invalid credetial!");
